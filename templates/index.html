@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>郑恒科</title>
+</head>
+<body>
+    河北省唐山市
+    <form method="post">
+        <input type="text" name="username">
+{#        提交按钮#}
+        <input type="submit" value="提交">
+    </form>
+    <table border="1">
+        <tr>
+            <th>用户名</th>
+        </tr>
+
+            {% for i in order %}
+                <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ i.username }}</td>
+                </tr>
+            {% endfor %}
+
+    </table>
+</body>
+</html>

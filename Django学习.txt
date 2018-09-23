@@ -1,0 +1,11 @@
+1、启动站点
+python manage.py startapp app
+
+2、启动服务器
+python manage.py runserver
+
+3、安装app
+python manage.py makemigrations
+
+4、同步数据库
+python manage.py migrate
